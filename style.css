@@ -1,0 +1,113 @@
+
+.progressBarBorder {
+  border: 2px solid green;
+  background: black;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBarProgress {
+  background: green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: width 0.5s;
+}
+
+.progressBarText {
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.worldContainer {
+  position: relative;
+}
+
+.regionImage {
+    width: 100%;
+    height: 100%;
+}
+
+.leftRight {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 6px;
+}
+
+.leftRight:first-child {
+    left: 0;
+    right: 50%;
+}
+
+.regionHidden {
+    transform: translate(0, 0);
+    opacity: 0;
+}
+
+.regionVisible {
+    opacity: 1;
+}
+
+.regionOption {
+    transition: 0.5s;
+    background: black;
+    border: 2px solid green;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.logContainer {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: scroll;
+}
+
+.logEntry {
+    padding: 2px 6px;
+}
+
+.logEntry:last-child {
+    padding-bottom: 0px;
+}
+
+.logEntry:first-child {
+    padding-top: 0px;
+}
+
+.logEntry:nth-child(2) {
+    background: #f2f2f2;
+}
+
+.topBar {
+    margin-bottom: 4px;
+    height: 32px;
+}
+
+.speedControls {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: calc(50% - 100px);
+    display: inline-block;
+    float: right;
+}
+
+.speedControlButton {
+    display: inline;
+    border: 1px solid black;
+    background: #FFDDDD;
+    padding: 4px;
+    margin-right: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.speedControlButton.selected {
+    background: #AAFFAA;
+}
